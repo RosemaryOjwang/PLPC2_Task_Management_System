@@ -1,0 +1,65 @@
+[debug] [2023-01-26T20:09:50.246Z] ----------------------------------------------------------------------
+[debug] [2023-01-26T20:09:50.251Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\HP\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2023-01-26T20:09:50.252Z] CLI Version:   11.21.0
+[debug] [2023-01-26T20:09:50.252Z] Platform:      win32
+[debug] [2023-01-26T20:09:50.252Z] Node Version:  v19.5.0
+[debug] [2023-01-26T20:09:50.252Z] Time:          Thu Jan 26 2023 23:09:50 GMT+0300 (East Africa Time)
+[debug] [2023-01-26T20:09:50.253Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-01-26T20:09:50.266Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-01-26T20:09:50.267Z] > authorizing via signed-in user (rosemaryojwang26@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\Users\HP\Desktop\webDevelopmentProjects\taskManagementSystem
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2023-01-26T20:12:32.567Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects pageSize=100
+[debug] [2023-01-26T20:12:33.554Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects 200
+[debug] [2023-01-26T20:12:33.555Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects [omitted]
+[info] i  Using project plp-cohort-2-89470 (plp cohort 2) 
+[info] 
+=== Database Setup
+[info] i  database: ensuring required API firebasedatabase.googleapis.com is enabled... 
+[debug] [2023-01-26T20:12:38.653Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/plp-cohort-2-89470/services/firebasedatabase.googleapis.com [none]
+[debug] [2023-01-26T20:12:38.653Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/plp-cohort-2-89470/services/firebasedatabase.googleapis.com x-goog-quota-user=projects/plp-cohort-2-89470
+[debug] [2023-01-26T20:12:40.622Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/plp-cohort-2-89470/services/firebasedatabase.googleapis.com 200
+[debug] [2023-01-26T20:12:40.622Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/plp-cohort-2-89470/services/firebasedatabase.googleapis.com [omitted]
+[warn] !  database: missing required API firebasedatabase.googleapis.com. Enabling now... 
+[debug] [2023-01-26T20:12:40.625Z] >>> [apiv2][query] POST https://serviceusage.googleapis.com/v1/projects/plp-cohort-2-89470/services/firebasedatabase.googleapis.com:enable [none]
+[debug] [2023-01-26T20:12:40.626Z] >>> [apiv2][(partial)header] POST https://serviceusage.googleapis.com/v1/projects/plp-cohort-2-89470/services/firebasedatabase.googleapis.com:enable x-goog-quota-user=projects/plp-cohort-2-89470
+[debug] [2023-01-26T20:12:42.688Z] <<< [apiv2][status] POST https://serviceusage.googleapis.com/v1/projects/plp-cohort-2-89470/services/firebasedatabase.googleapis.com:enable 200
+[debug] [2023-01-26T20:12:42.689Z] <<< [apiv2][body] POST https://serviceusage.googleapis.com/v1/projects/plp-cohort-2-89470/services/firebasedatabase.googleapis.com:enable [omitted]
+[debug] [2023-01-26T20:12:52.694Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/plp-cohort-2-89470/services/firebasedatabase.googleapis.com [none]
+[debug] [2023-01-26T20:12:52.695Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/plp-cohort-2-89470/services/firebasedatabase.googleapis.com x-goog-quota-user=projects/plp-cohort-2-89470
+[debug] [2023-01-26T20:12:54.505Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/plp-cohort-2-89470/services/firebasedatabase.googleapis.com 200
+[debug] [2023-01-26T20:12:54.505Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/plp-cohort-2-89470/services/firebasedatabase.googleapis.com [omitted]
+[info] +  database: required API firebasedatabase.googleapis.com is enabled 
+[info] 
+[debug] [2023-01-26T20:12:54.523Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/plp-cohort-2-89470 [none]
+[debug] [2023-01-26T20:12:55.091Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/plp-cohort-2-89470 200
+[debug] [2023-01-26T20:12:55.092Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/plp-cohort-2-89470 {"projectId":"plp-cohort-2-89470","projectNumber":"594831151489","displayName":"plp cohort 2","name":"projects/plp-cohort-2-89470","resources":{"hostingSite":"plp-cohort-2-89470"},"state":"ACTIVE","etag":"1_c6d9ef15-90d6-48aa-ab26-dcdfc62dd1d6"}
+[debug] [2023-01-26T20:13:45.907Z] >>> [apiv2][query] POST https://firebasedatabase.googleapis.com/v1beta/projects/plp-cohort-2-89470/locations/us-central1/instances databaseId=plp-cohort-2-89470-default-rtdb&validateOnly=true
+[debug] [2023-01-26T20:13:45.907Z] >>> [apiv2][body] POST https://firebasedatabase.googleapis.com/v1beta/projects/plp-cohort-2-89470/locations/us-central1/instances {"type":"default_database"}
+[debug] [2023-01-26T20:13:47.289Z] <<< [apiv2][status] POST https://firebasedatabase.googleapis.com/v1beta/projects/plp-cohort-2-89470/locations/us-central1/instances 200
+[debug] [2023-01-26T20:13:47.289Z] <<< [apiv2][body] POST https://firebasedatabase.googleapis.com/v1beta/projects/plp-cohort-2-89470/locations/us-central1/instances {"name":"projects/594831151489/locations/us-central1/instances/plp-cohort-2-89470-default-rtdb","project":"projects/594831151489","databaseUrl":"https://plp-cohort-2-89470-default-rtdb.firebaseio.com","type":"DEFAULT_DATABASE","state":"ACTIVE"}
+[debug] [2023-01-26T20:13:47.295Z] >>> [apiv2][query] POST https://firebasedatabase.googleapis.com/v1beta/projects/plp-cohort-2-89470/locations/us-central1/instances databaseId=plp-cohort-2-89470-default-rtdb
+[debug] [2023-01-26T20:13:47.295Z] >>> [apiv2][body] POST https://firebasedatabase.googleapis.com/v1beta/projects/plp-cohort-2-89470/locations/us-central1/instances {"type":"default_database"}
+[debug] [2023-01-26T20:13:48.279Z] <<< [apiv2][status] POST https://firebasedatabase.googleapis.com/v1beta/projects/plp-cohort-2-89470/locations/us-central1/instances 200
+[debug] [2023-01-26T20:13:48.280Z] <<< [apiv2][body] POST https://firebasedatabase.googleapis.com/v1beta/projects/plp-cohort-2-89470/locations/us-central1/instances {"name":"projects/594831151489/locations/us-central1/instances/plp-cohort-2-89470-default-rtdb","project":"projects/594831151489","databaseUrl":"https://plp-cohort-2-89470-default-rtdb.firebaseio.com","type":"DEFAULT_DATABASE","state":"ACTIVE"}
+[info] 
+[info] Firebase Realtime Database Security Rules allow you to define how your data should be
+[info] structured and when your data can be read from and written to.
+[info] 
